@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    .calc{
+        border:1px solid grey;
+        border-radius: 10px;
+        background-color:rgb(8, 8, 51);
+        margin: 80px;
+        padding: 10px;
+        color: white;
+        width:40%;
+        border-bottom: 5px solid indianred;
+    }
+           input{
+                width: 70px;
+                padding: 10px;
+                border-radius:5px;
+                background:white;
+                text-align: center;
+                height: 40px;
+                margin:10px;
+                font-size:22px;
+    
+            }
+            .textcheck{
+                border-top: 5px solid indianred;
+                width:290px;
+                height:50px;
+                margin:10px ;
+                border-radius: 5px;
+
+            }
+            .ac{
+                width:160px;
+                height:40px;
+                padding: 10px;
+                border-radius: 5px;
+            }
+            .equal{
+                background-color: indianred;
+                color: white;
+            }
+</style>
+</head>
+<body>
+<center>
+<div class="calc">
+<form name="form1">
+    <input type="text" name="result" class="textcheck">
+    <br>
+   
+    <input type="button" value="1" onclick="form1.result.value += '1' ">
+    <input type="button" value="2" onclick="form1.result.value += '2' ">
+    <input type="button" value="AC" onclick="form1.result.value ='' " class="ac" >
+    <br>
+    <input type="button" value="3" onclick="form1.result.value += '3' ">
+    <input type="button" value="4" onclick="form1.result.value += '4' ">
+    <input type="button" value="5" onclick="form1.result.value += '5' ">
+    <input type="button" value="6" onclick="form1.result.value += '6' ">
+    <br>
+    <input type="button" value="7" onclick="form1.result.value += '7' ">
+    <input type="button" value="8" onclick="form1.result.value += '8' ">
+    <input type="button" value="9" onclick="form1.result.value += '9' ">
+    <input type="button" value="-" onclick="form1.result.value += '-' ">
+    <br>
+    <input type="button" value="0" onclick="form1.result.value += '0' ">
+    <input type="button" value="." onclick="form1.result.value += '.' ">
+    <input type="button" value="=" onclick="form1.result.value = eval(form1.result.value)" class="equal">
+    <input type="button" value="/" onclick="form1.result.value += '/' ">
+    <br>
+    <input type="button" value="*" onclick="form1.result.value += '*' ">
+    <input type="button" value="(" onclick="form1.result.value += '(' ">
+    <input type="button" value=")" onclick="form1.result.value += ')' ">
+    <input type="button" value="+" onclick="form1.result.value += '+' ">
+
+</form>
+</div>
+</center>
+</body>
+</html>
